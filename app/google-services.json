@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "24593551944",
+    "firebase_url": "https://bilal-projects-4c562.firebaseio.com",
+    "project_id": "bilal-projects-4c562",
+    "storage_bucket": "bilal-projects-4c562.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:24593551944:android:78952d9bdd062f1f377e7d",
+        "android_client_info": {
+          "package_name": "com.example.demo_chat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "24593551944-fc3at27fk5t298r181i1623jmdbuma1d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARczyir7dVGqXZPa7oovQGsGcqXvETk5s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "24593551944-fc3at27fk5t298r181i1623jmdbuma1d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:24593551944:android:f71650399f9e8a1b377e7d",
+        "android_client_info": {
+          "package_name": "com.ourproduct123"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "24593551944-fc3at27fk5t298r181i1623jmdbuma1d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARczyir7dVGqXZPa7oovQGsGcqXvETk5s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "24593551944-fc3at27fk5t298r181i1623jmdbuma1d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
