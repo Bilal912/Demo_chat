@@ -40,5 +40,19 @@
             />
     </LinearLayout>
 
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tablayout_id"
+        android:background="@color/authui_colorAccent"
+        app:tabSelectedTextColor="#fff"
+        app:tabIndicatorColor="#fff"
+        app:tabTextColor="#fff"
+        />
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
 
 </LinearLayout>
