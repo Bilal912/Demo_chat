@@ -3,12 +3,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/com_facebook_button_send_background_color_pressed"
+    android:background="#fff"
     tools:context=".Chat_fragment">
 
     <TextView
+        android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Yeh to hoga" />
+        android:text="Still Working Swipe to Users" />
 
 </FrameLayout>

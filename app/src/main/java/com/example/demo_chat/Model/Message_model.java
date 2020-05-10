@@ -1,33 +1,33 @@
 package com.example.demo_chat.Model;
 
 public class Message_model {
-    String sender;
-    String recver;
+    String send;
+    String reciver;
     String message;
 
     public Message_model() {
     }
 
-    public Message_model(String sender, String recver, String message) {
-        this.sender = sender;
-        this.recver = recver;
+    public Message_model(String send, String reciver, String message) {
+        this.send = send;
+        this.reciver = reciver;
         this.message = message;
     }
 
-    public String getSender() {
-        return sender;
+    public String getSend() {
+        return send;
     }
 
-    public void setSender(String sender) {
-        this.sender = sender;
+    public void setSend(String send) {
+        this.send = send;
     }
 
-    public String getRecver() {
-        return recver;
+    public String getReciver() {
+        return reciver;
     }
 
-    public void setRecver(String recver) {
-        this.recver = recver;
+    public void setReciver(String reciver) {
+        this.reciver = reciver;
     }
 
     public String getMessage() {

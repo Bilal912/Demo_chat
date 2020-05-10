@@ -17,6 +17,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:textColor="#000000"
             android:text="Choose One :"
             />
         <Button
@@ -24,9 +27,13 @@
             android:layout_height="wrap_content"
             android:text="Login"
             android:onClick="login"
+            android:textSize="20sp"
+            android:padding="10dp"
             android:layout_margin="20dp"
             />
         <Button
+            android:textSize="20sp"
+            android:padding="10dp"
             android:onClick="register"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

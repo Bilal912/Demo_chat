@@ -3,6 +3,7 @@ package com.example.demo_chat;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -45,7 +46,10 @@ DatabaseReference reference;
                 String Password = pass.getText().toString();
 
                 if (TextUtils.isEmpty(Email) || TextUtils.isEmpty(Password)){
-                    Toast.makeText(LoginActivity.this,"Data Do pehla",Toast.LENGTH_LONG).show();
+                    Toast.makeText(LoginActivity.this,"Data is necessary",Toast.LENGTH_LONG).show();
+                }
+                else if (Password.length() < 6){
+                    Toast.makeText(LoginActivity.this,"Password must be 6 characters",Toast.LENGTH_LONG).show();
                 }
                 else {
                     login(Email,Password);
@@ -56,16 +60,21 @@ DatabaseReference reference;
 
     private void login(String email, String password) {
 
+        final android.app.AlertDialog loading = new ProgressDialog(LoginActivity.this);
+        loading.setMessage("Loading...");
+        loading.show();
         auth.signInWithEmailAndPassword(email,password)
                 .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                       if (task.isSuccessful()){
+                          loading.dismiss();
                           Intent intent = new Intent(LoginActivity.this,Menu.class);
                           startActivity(intent);
                           finish();
                       }
                       else {
+                          loading.dismiss();
                           Toast.makeText(LoginActivity.this,"Aisa to ni hota",Toast.LENGTH_LONG).show();
 
                       }
